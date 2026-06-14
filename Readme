@@ -1,0 +1,82 @@
+# Playwright Java Automation Testing
+
+## Overview
+
+This project contains automated test scripts for the DemoQA Student Registration Form using Playwright Java, TestNG, and Maven.
+
+### Application Under Test
+
+https://demoqa.com/automation-practice-form
+
+## Tech Stack
+
+* Java 21
+* Playwright Java
+* TestNG
+* Maven
+* Extent Reports
+
+## Project Structure
+
+src/test/java
+
+* base
+
+  * BaseTest.java
+* pages
+
+  * RegistPage.java
+* testdata
+
+  * StudentData.java
+* tests
+
+  * RegistTest.java
+  
+  utils
+  *ExtentManager.java
+  *ScreenshotUtils.java
+
+## Test Scenarios
+
+### Positive Test
+
+* Submit form with valid data
+* Verify success popup is displayed
+* Verify submitted data matches input values
+
+### Negative Tests
+
+* Submit form with invalid email format
+
+* Verify browser validation message is displayed
+
+* Submit empty form
+
+* Verify required field validation is displayed
+
+## How to Run
+
+Clone the repository:
+
+git clone <repository-url>
+
+Navigate to project directory:
+
+cd PlaywrightJavaProject
+
+run all tests:
+
+mvn test
+
+## Test Report
+
+After execution, the Extent Report can be found in:
+
+test-output/
+
+Open the generated HTML report in your browser to view test results and execution logs.
+
+## Author
+
+Nadia Kusuma Putri
