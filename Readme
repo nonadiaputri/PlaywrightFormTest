@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project contains automated test scripts for the DemoQA Student Registration Form using Playwright Java, TestNG, and Maven.
+This project contains automated test scripts for the DemoQA Student Registration Form using Playwright Java, TestNG, Maven, and Extent Reports.
 
 ### Application Under Test
 
@@ -18,24 +18,20 @@ https://demoqa.com/automation-practice-form
 
 ## Project Structure
 
+```text
 src/test/java
-
-* base
-
-  * BaseTest.java
-* pages
-
-  * RegistPage.java
-* testdata
-
-  * StudentData.java
-* tests
-
-  * RegistTest.java
-  
-  utils
-  *ExtentManager.java
-  *ScreenshotUtils.java
+├── base
+│   └── BaseTest.java
+├── pages
+│   └── RegistPage.java
+├── testdata
+│   └── StudentData.java
+├── tests
+│   └── RegistTest.java
+└── utils
+    ├── ExtentManager.java
+    └── ScreenshotUtils.java
+```
 
 ## Test Scenarios
 
@@ -48,35 +44,48 @@ src/test/java
 ### Negative Tests
 
 * Submit form with invalid email format
-
 * Verify browser validation message is displayed
-
 * Submit empty form
-
 * Verify required field validation is displayed
 
 ## How to Run
 
-Clone the repository:
+### Clone the Repository
 
-git clone <repository-url>
+```bash
+git clone https://github.com/nonadiaputri/PlaywrightFormTest.git
+```
 
-Navigate to project directory:
+### Navigate to Project Directory
 
-cd PlaywrightJavaProject
+```bash
+cd PlaywrightFormTest
+```
 
-run all tests:
+### Run All Tests
 
+```bash
 mvn test
+```
 
 ## Test Report
 
-After execution, the Extent Report can be found in:
+After test execution, the Extent Report will be generated automatically.
 
+Report location:
+
+```text
 test-output/
+```
 
-Open the generated HTML report in your browser to view test results and execution logs.
+Open the generated HTML report in your browser to view:
+
+* Test results
+* Execution logs
+* Screenshots (if configured)
 
 ## Author
 
-Nadia Kusuma Putri
+**Nadia Kusuma Putri**
+
+QA Automation Engineer | Playwright Java | TestNG
